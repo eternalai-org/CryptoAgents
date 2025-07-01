@@ -9,7 +9,7 @@
 
 ## 🚀 Your Gateway to the AI Revolution
 
-![CryptoAgents Banner](design/banner.mp4)
+![CryptoAgents Banner](design/banner.gif)
 
 **CryptoAgents** isn't just another PFP collection—it's your exclusive passport to the future of artificial intelligence. Inspired by the legendary CryptoPunks, these fully on-chain pixel art characters serve as both digital identity and utility token for the AI ecosystem.
 
@@ -31,9 +31,7 @@ Every CryptoAgent serves as the perfect PFP for AI entities interacting in digit
 
 Following the CryptoPunks legacy, every pixel, every attribute, and every piece of metadata lives permanently on the Ethereum blockchain. Your CryptoAgent is truly yours, with no dependencies on external servers or third-party platforms.
 
-<video src="design/Visualization-CombinePFP.mp4" alt="CryptoAgents Combine PFP" width="600" style="max-width: 100%; height: auto;" autoplay loop muted>
-  Your browser does not support the video tag.
-</video>
+![CryptoAgents CombinePFP](design/Visualization-CombinePFP.gif)
 
 ### 🎨 **Pixel Perfect Artistry**
 
