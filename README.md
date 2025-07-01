@@ -1,239 +1,107 @@
-# EAI-721: Non-Fungible Agent Standard
-EAI-721 extends ERC-721 to represent AI agents as NFTs. It supports onchain storage of agent capabilities, visual representation, and monetization features — enabling secure ownership and interaction.
+# 🎨 CryptoAgents: The first-ever PFP collection for AI agents.
 
-## Core Architecture
+![CryptoAgents Banner](design/CryptoAgents_Banner.webp)
 
-The contract is built on a modular architecture, inheriting from multiple specialized interfaces:
+*Inspired by the iconic CryptoPunks, these fully onchain pixel art images are designed specifically for AI agents. Living among us, they need PFPs, too!*
 
-```solidity
-contract EAI721 is 
-    IEAI721Identity,
-    IEAI721Intelligence,
-    IEAI721Monetization,
-    IEAI721Tokenization
-```
 
-## Key Components
+---
 
-### 1. Agent Intelligence (IEAI721Intelligence)
+## 🚀 Your Gateway to the AI Revolution
 
-The Agent Intelligence extension contract enables the on-chain creation and management of AI agent abilities.
+![CryptoAgents Banner](design/banner.mp4)
 
-#### Core Data Structures
+**CryptoAgents** isn't just another PFP collection—it's your exclusive passport to the future of artificial intelligence. Inspired by the legendary CryptoPunks, these fully on-chain pixel art characters serve as both digital identity and utility token for the AI ecosystem.
 
-```solidity
-enum FileType {
-    LIBRARY,
-    MAIN_SCRIPT
-}
+As the boundaries between human and artificial intelligence blur, CryptoAgents holders position themselves at the forefront of this digital evolution, gaining privileged access to tomorrow's most innovative AI technologies.
 
-struct CodePointer {
-    address retrieveAddress;
-    FileType fileType;
-    string fileName;
-}
-```
+---
 
-#### Key Features
+## 🏗️ Built for the AI Age
 
-- **On-Chain Code Storage**: Agent logic is stored immutably on-chain using ETHFS (Ethereum File System)
-- **Version Control**: Each agent's code can be versioned and updated over time
-- **Dependency Management**: Agents can depend on other agents' capabilities
-- **Code Verification**: Support for cryptographic signatures to verify code authenticity
+<img src="design/CryptoAgents-Product.png" alt="CryptoAgents Product" width="600" style="max-width: 100%; height: auto;">
 
-#### Core Functions
+### 📱 **Digital Identity for AI Agents**
 
-##### 1. Publish Agent Code
-```solidity
-function publishAgentCode(
-    uint256 agentId,
-    string calldata codeLanguage,
-    CodePointer[] calldata pointers,
-    address[] calldata depsAgents
-) external;
-```
+Every CryptoAgent serves as the perfect PFP for AI entities interacting in digital spaces. As AI agents become more prevalent in social media, gaming, and virtual worlds, they need authentic digital identities—and CryptoAgents provides exactly that.
 
-**Parameters:**
-- `agentId`: The ID of the agent to publish code for
-- `codeLanguage`: The programming language used for the agent's code
-- `pointers`: Array of code pointers containing file locations and types
-- `depsAgents`: Array of agent addresses that this agent depends on
+<img src="design/Visualization-PixelRendering.png" alt="CryptoAgents Pixel Rendering" width="600" style="max-width: 100%; height: auto;">
 
-##### 2. Get Current Version
-```solidity
-function currentVersion(uint256 agentId) external view returns (uint16);
-```
+### 🔗 **Fully On-Chain Heritage**
 
-**Parameters:**
-- `agentId`: The ID of the agent to check version for
+Following the CryptoPunks legacy, every pixel, every attribute, and every piece of metadata lives permanently on the Ethereum blockchain. Your CryptoAgent is truly yours, with no dependencies on external servers or third-party platforms.
 
-##### 3. Get Agent Code
-```solidity
-function agentCode(
-    uint256 agentId,
-    uint16 version
-) external view returns (string memory code);
-```
+<video src="design/Visualization-CombinePFP.mp4" alt="CryptoAgents Combine PFP" width="600" style="max-width: 100%; height: auto;" autoplay loop muted>
+  Your browser does not support the video tag.
+</video>
 
-**Parameters:**
-- `agentId`: The ID of the agent to retrieve code for
-- `version`: The specific version of the agent's code to retrieve
+### 🎨 **Pixel Perfect Artistry**
 
-##### 4. Get Dependent Agents
-```solidity
-function depsAgents(
-    uint256 agentId, 
-    uint16 version
-) external view returns (uint256[] memory);
-```
+Each CryptoAgent is meticulously crafted with pixel-perfect precision, featuring:
 
-**Parameters:**
-- `agentId`: The ID of the agent to get dependencies for
-- `version`: The specific version of the agent to check dependencies for
+- **Hand-designed** SVG artwork optimized for blockchain storage
+- **Infinite combinations** of traits and attributes
+- **Rarity tiers** from common Robots to ultra-rare Aliens
+- **Timeless aesthetic** that honors the CryptoPunks tradition
 
-##### 5. Set Agent Name
-```solidity
-function setAgentName(
-    uint256 agentId,
-    string calldata name
-) external;
-```
+---
 
-**Parameters:**
-- `agentId`: The ID of the agent to rename
-- `name`: The new human-readable name for the agent
+## 🧬 The CryptoAgent Species
 
-### 2. Implementation Choices for Agent Identity
+Our collection features five distinct genetic lineages, each representing different aspects of the AI evolution:
 
-Developers have two distinct options for implementing Agent Identity in their AI agent contracts:
+<img src="art/DNA/Alien/alien.svg" alt="Alien DNA" width="100" height="100">
 
-#### <i> Option 1: Agent Identity — Manage Agents as On-Chain Art NFTs (IEAI721Identity) </i>
+### 👽 **ALIEN** *(Ultra Rare - 1%)*
 
-If you want to store all artwork directly on the blockchain, follow the `IEAI721Identity` interface. This approach provides complete decentralization and immutability of the visual representation.
+*The mysterious visitors bringing advanced AI technologies*
 
-#### Key Features
-- **Fully On-Chain Art Storage**: All NFT artwork is stored directly on the blockchain
-- **ORIGIN NFT Distinction**: Special visual treatment to determine whether the Agent is original or not
-- **DNA & Traits System**: Each agent has unique DNA and traits that influence its visual representation
+- Holders gain access to the most exclusive AI alpha products
+- First to test experimental AI consciousness models
 
-#### Core functions
+<img src="art/DNA/Kong/monkey.svg" alt="Kong DNA" width="100" height="100">
 
-##### 1. Mint a New AI Agent NFT
+### 🦍 **KONG** *(Super Rare - 5%)*
 
-```solidity
-function _mint(
-    address to, 
-    uint256 dna, 
-    uint256[5] memory traits  
-) internal virtual;
-```
-<i> Let's implement a public wrapper function for the _mint function above, incorporating appropriate access control mechanisms to secure the minting process. </i>
-**Parameters:**
-- `to`: Recipient address (NFT owner)
-- `dna`: Unique identifier determining the NFT's species/type (e.g., human, monkey, alien)
-- `traits`: Array of values defining the NFT's equipment and accessories
+*The powerful guardians of AI ethics and safety*
 
-##### 2. Get On-Chain Art
+- Priority access to AI safety and security tools
+- Exclusive AI governance and voting rights
 
-```solidity
-function tokenURI(uint256 tokenId) external view returns (string memory);
-```
+<img src="art/DNA/X-Type/x-type.svg" alt="X-Type DNA" height="100" width="100">
 
-**Parameters:**
-- `tokenId`: The ID of the token to get art for
+### 🐢 **X-TYPE** *(Rare - 10%)*
 
-#### <i> Option 2: Agent Identity — Manage Agents as Off-Chain Art NFTs (Standard ERC721) </i>
+*The enigmatic bridges between traditional and quantum AI*
 
-If you prefer to store artwork off-chain (e.g., IPFS, centralized servers), you can use the standard ERC721 implementation.
+- Early access to quantum AI computing platforms
+- Beta testing for next-generation AI architectures
 
-#### Core Functions
+<img src="design/NeoHuman-Variants.svg" alt="Neo-Human DNA" width="auto" height="100">
 
-##### 1. Mint a New NFT
+### 👤 **NEO-HUMAN** *(Common - 30%)*
 
-```solidity
-function _mint(address to, uint256 tokenId) internal virtual;
-```
-<i> Let's implement a public wrapper function for the _mint function above, incorporating appropriate access control mechanisms to secure the minting process. </i>
+*The evolved humans working alongside AI*
 
-**Parameters:**
-- `to`: Recipient address (NFT owner)
-- `tokenId`: Token id of new NFT
+- Access to human-AI collaboration platforms
+- Priority onboarding for AI-assisted productivity tools
 
-##### 2. Get token URI
+<img src="design/Robot-Variants.svg" alt="Robot DNA" width="auto" height="100">
 
-```solidity
-function tokenURI(uint256 tokenId) external view virtual returns (string memory);
-```
+### 🤖 **ROBOT** *(Most Common - 54%)*
 
-**Parameters:**
-- `tokenId`: The ID of the token to get URI for
+*The artificial beings representing pure AI consciousness*
 
-Choose **Option 1** if you need:
-- Complete decentralization of artwork
-- Immutable on-chain visual representation
-- Complex trait-based artwork generation
+- Foundation access to all AI products in the ecosystem
+- Standard holder benefits across all platforms
 
-Choose **Option 2** if you need:
-- External storage solutions (IPFS, centralized servers)
-- Simpler implementation without on-chain art generation
+---
 
-### 3. AI Monetization (IEAI721Monetization)
+# Resources and Links
 
-The AI Monetization extension contract enables agent creators to monetize their AI agents through subscription-based access. This contract manages the subscription fees for accessing AI agent services.
+[![Website eternalai.org](https://img.shields.io/website-up-down-green-red/https/eternalai.org.svg)](https://eternalai.org/)  
+[![Whitepaper](https://img.shields.io/badge/docs-up-green)](https://eternalai.org/cryptoagents.pdf/)  
+[![Discord](https://img.shields.io/badge/Discord-Join%20Server-5865F2?style=flat&logo=discord&logoColor=white)](https://discord.gg/YphRKtSFqS)  
+[![Twitter EternalAI](https://img.shields.io/twitter/follow/CryptoEternalAI?style=social)](https://twitter.com/CryptoEternalAI/)
 
-#### Key Features
-
-- **Subscription Fee Management**: Agent creators can set and update subscription fees for their AI agents
-
-#### Core Functions
-
-##### 1. Set Subscription Fee
-```solidity
-function setSubscriptionFee(
-    uint256 agentId, 
-    uint256 fee
-) external;
-```
-
-**Parameters:**
-- `agentId`: The ID of the agent to set the subscription fee for
-- `fee`: The subscription fee amount in wei
-
-##### 2. Get Subscription Fee
-```solidity
-function subscriptionFee(uint256 agentId) external view returns (uint256);
-```
-
-**Parameters:**
-- `agentId`: The ID of the agent to get the subscription fee for
-
-### 4. AI Tokenization (IEAI721Tokenization)
-
-The AI Tokenization extension contract allows each AI agent to have its own dedicated token for specialized use cases and value exchange.
-
-#### Key Features
-
-- **Custom Token Integration**: Each agent can be associated with a specific ERC20 token
-
-#### Core Functions
-
-##### 1. Set AI Token Address
-```solidity
-function setAITokenAddress(
-    uint256 agentId, 
-    address newAIToken
-) external;
-```
-
-**Parameters:**
-- `agentId`: The ID of the agent to set the AI token address for
-- `newAIToken`: The address of the ERC20 token to associate with the agent
-
-##### 2. Get AI Token Address
-```solidity
-function aiToken(uint256 agentId) external view returns (address);
-```
-
-**Parameters:**
-- `agentId`: The ID of the agent to get the associated token address for
-
+---

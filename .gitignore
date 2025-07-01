@@ -1,54 +1,55 @@
 node_modules
-.env
-coverage
-coverage.json
-typechain
-typechain-types
+code/node_modules
+code/.env
+code/coverage
+code/coverage.json
+code/typechain
+code/typechain-types
 
 #Hardhat files
-cache
+code/cache
 #artifacts
 
 # python
-__pycache__/
-*.py[cod]
-*$py.class
+code/__pycache__/
+code/*.py[cod]
+code/*$py.class
 
 # vim
-[._]*.s[a-v][a-z]mint
-[._]*.sw[a-p]
-[._]s[a-rt-v][a-z]
-[._]ss[a-gi-z]
-[._]sw[a-p]
-netrwhist
-*~
-tags
-[._]*.un~
+code/[._]*.s[a-v][a-z]mint
+code/[._]*.sw[a-p]
+code/[._]s[a-rt-v][a-z]
+code/[._]ss[a-gi-z]
+code/[._]sw[a-p]
+code/netrwhist
+code/*~
+code/tags
+code/[._]*.un~
 
 # Logs
-logs
-*.log
+code/logs
+code/*.log
 
 # local env variables
-.env
+code/.env
 
 # macOS
-.DS_Store
+code/.DS_Store
 
 #artifacts
 
-cache
+code/cache
 
-yarn.lock
+code/yarn.lock
 
-package-lock.json
+code/package-lock.json
 
 .idea
 
-artifacts
+code/artifacts
 
-structure.md
+code/structure.md
 
 .cursor/
 
-*.sh
+code/*.sh
