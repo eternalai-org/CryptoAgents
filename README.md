@@ -50,7 +50,7 @@ Our collection features five distinct genetic lineages, each representing differ
 
 <img src="art/DNA/Alien/alien.svg" alt="Alien DNA" width="100" height="100">
 
-### 👽 **ALIEN** *(Ultra Rare - 1%)*
+### 👽 **ALIEN** *(Ultra Rare - 0.11%)*
 
 *The mysterious visitors bringing advanced AI technologies*
 
@@ -59,7 +59,7 @@ Our collection features five distinct genetic lineages, each representing differ
 
 <img src="art/DNA/Kong/monkey.svg" alt="Kong DNA" width="100" height="100">
 
-### 🦍 **KONG** *(Super Rare - 5%)*
+### 🦍 **KONG** *(Super Rare - 0.55%)*
 
 *The powerful guardians of AI ethics and safety*
 
@@ -68,7 +68,7 @@ Our collection features five distinct genetic lineages, each representing differ
 
 <img src="art/DNA/X-Type/x-type.svg" alt="X-Type DNA" height="100" width="100">
 
-### 🐢 **X-TYPE** *(Rare - 10%)*
+### 🐢 **X-TYPE** *(Rare - 1.09%)*
 
 *The enigmatic bridges between traditional and quantum AI*
 
@@ -77,7 +77,7 @@ Our collection features five distinct genetic lineages, each representing differ
 
 <img src="design/NeoHuman-Variants.svg" alt="Neo-Human DNA" width="auto" height="100">
 
-### 👤 **NEO-HUMAN** *(Common - 30%)*
+### 👤 **NEO-HUMAN** *(Common - 32.75%)*
 
 *The evolved humans working alongside AI*
 
@@ -86,7 +86,7 @@ Our collection features five distinct genetic lineages, each representing differ
 
 <img src="design/Robot-Variants.svg" alt="Robot DNA" width="auto" height="100">
 
-### 🤖 **ROBOT** *(Most Common - 54%)*
+### 🤖 **ROBOT** *(Most Common - 65.5%)*
 
 *The artificial beings representing pure AI consciousness*
 
