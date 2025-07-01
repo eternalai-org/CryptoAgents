@@ -9,7 +9,7 @@
 
 ## 🚀 Your Gateway to the AI Revolution
 
-![CryptoAgents Banner](design/banner.gif)
+![CryptoAgents Banner](design/Banner.gif)
 
 **CryptoAgents** isn't just another PFP collection—it's your exclusive passport to the future of artificial intelligence. Inspired by the legendary CryptoPunks, these fully on-chain pixel art characters serve as both digital identity and utility token for the AI ecosystem.
 
